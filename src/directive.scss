@@ -1,0 +1,45 @@
+.parallax-header.extended, .parallax-ion-header.extended{
+  height: 300px;
+  z-index: 9;
+  background-size: cover;
+}
+.parallax-toolbar.extended{
+  height: 300px;
+  --background: rgba(255,255,255,0)
+}
+
+.parallax-header, .parallax-ion-header{
+  height:44px;
+  position: fixed;
+  z-index:11;
+  background: white;
+}
+.parallax-toolbar{
+  height: 44px;
+  --background: rgba(255,255,255,1)
+}
+
+.parallax-body{
+    top: 300px;
+    position: absolute;
+    background: white;
+    width: 100%;
+    min-height: 100vh;
+    z-index: 10;
+}
+
+.parallax-title{
+  position: absolute;
+  bottom: 0;
+  padding-left:1em;
+  padding-right: 1em;
+  color: white;
+  text-shadow: 0 0 3px black;
+
+  > h1{
+    max-width: calc( 100vw - 32px );
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+}
